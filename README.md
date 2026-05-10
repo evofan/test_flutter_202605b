@@ -35,3 +35,20 @@ Windows 10/11 SDK
 <img src="https://evofan.github.io/test_flutter_202605b/screenshot/2.png" width="50%">  
 <img src="https://evofan.github.io/test_flutter_202605b/screenshot/3.png" width="50%">  
 <img src="https://evofan.github.io/test_flutter_202605b/screenshot/4.png" width="50%">  
+
+AI による概要  
+「Failed host lookup: 'cocoapods.org'」エラーは、  
+お使いの端末からCocoaPodsのサーバーに接続できない場合に発生します。  
+インターネット接続、DNS設定、または社内ネットワーク（VPN・ファイアウォール）が  
+原因であることが一般的です。以下の対策を順にお試しください。  
+  
+解決のための手順: 
+インターネット接続を確認: ブラウザで cocoapods.org にアクセスできるか確認してください。  
+DNS設定の変更: 一時的にGoogleパブリックDNS (8.8.8.8 および 8.8.4.4) に変更すると解決する場合があります。  
+VPN/プロキシの確認: VPNを使用している場合は切断するか、プロキシ設定が正しく行われているか確認してください。  
+IPv6の設定: 環境によってはIPv6が原因となるため、IPv4優先に設定を変更する。  
+CocoaPodsのキャッシュクリア: ターミナルで pod repo update を実行し、リポジトリを更新してください。   
+  
+Flutterユーザーの場合:  
+flutter doctor でエラーが出る場合は、flutter upgrade や flutter clean を実行し、  
+Microsoft Defenderなどのセキュリティソフトが通信をブロックしていないか確認してください。   
